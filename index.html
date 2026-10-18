@@ -109,12 +109,13 @@
     <div class="wrap">
       <div class="reveal">
         <div class="section-head"><span class="num">01</span><h2>Selected work</h2></div>
-        <p class="lede">Four products I've built: client platforms in production and two university projects.</p>
+        <p class="lede">Five products I've built: client platforms in production and three university projects.</p>
         <ul class="jump" aria-label="Jump to a project">
           <li><a href="#flowiq"><span>01</span>FlowIQ</a></li>
           <li><a href="#emberhawk"><span>02</span>Emberhawk</a></li>
           <li><a href="#lalita"><span>03</span>Lalita Music School</a></li>
           <li><a href="#sitfit"><span>04</span>Sit&amp;Fit</a></li>
+          <li><a href="#commongoal"><span>05</span>CommonGoal</a></li>
         </ul>
       </div>
 
@@ -257,6 +258,9 @@
               <li>React</li><li>TypeScript</li><li>Vite</li><li>Workbox PWA</li><li>MapLibre GL</li><li>IndexedDB</li><li>ONNX Runtime Web</li><li>Node.js</li><li>PostGIS</li><li>AWS</li>
             </ul>
             <div class="links">
+              <a href="https://drive.google.com/file/d/1NfiRi4_igYjI9IZdX4tDqjZrKb6BfHjS/view">Watch the product video
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
               <a href="https://emberhawk.app">Visit emberhawk.app
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
               </a>
@@ -433,6 +437,51 @@
           </div>
         </article>
 
+        <!-- COMMONGOAL -->
+        <article class="project" id="commongoal">
+          <figure class="figure" data-gallery>
+            <div class="slides">
+            <div class="slide" data-caption="Route map: Mapbox GL with place search and walking or riding directions.">
+              <img src="img/commongoal-map.webp" alt="CommonGoal route map page: a search box, a directions form and a Mapbox map of north Melbourne with a pin for each active travel route." width="1680" height="1080" loading="lazy">
+            </div>
+            <div class="slide" data-caption="Admin console: live counts and Chart.js charts built from Firestore data.">
+              <img src="img/commongoal-admin.webp" alt="CommonGoal admin console: overview cards for users, ratings and emails sent, a bar chart of average rating per route and a donut chart of users by role." width="1680" height="1080" loading="lazy">
+            </div>
+            <div class="slide" data-caption="Clubs table: sort, search and per-column filters, with CSV and PDF export of exactly the rows shown. Test data, not real clubs.">
+              <img src="img/commongoal-clubs.webp" alt="CommonGoal climate-ready clubs table with column filters, pagination and Export CSV and Export PDF buttons." width="1680" height="1080" loading="lazy">
+            </div>
+            <div class="slide" data-caption="Public read-only REST API with a docs page and live examples.">
+              <img src="img/commongoal-api.webp" alt="CommonGoal public API docs page showing the base URL, curl and fetch examples, and the GET routes endpoint." width="1680" height="1080" loading="lazy">
+            </div>
+            </div>
+            <figcaption>Route map: Mapbox GL with place search and walking or riding directions.</figcaption>
+          </figure>
+          <div class="reveal">
+            <p class="kind"><b>05</b>University project</p>
+            <h3>CommonGoal</h3>
+            <p class="tagline">A web app for a fictional Melbourne not-for-profit that gets community sports clubs climate-ready and families walking or riding to training.</p>
+            <p class="context">Monash University, solo project, 2026. Live.</p>
+            <p class="role">I built all of it, front to back (58 commits, solo).</p>
+            <ul class="points">
+              <li>Firebase Auth with email and Google sign-in; member and admin roles enforced by Firestore rules, not just the router.</li>
+              <li>Cloud Functions that verify the caller's token: rating aggregates, role changes, email with attachments and admin bulk email through Brevo, with rate limits and the API key kept in Secret Manager.</li>
+              <li>Mapbox map with place search and directions, Chart.js admin charts, sortable tables with CSV and PDF export, and a public read-only REST API.</li>
+              <li>WCAG 2.1 AA work across the app: Lighthouse accessibility 100 on every page tested.</li>
+            </ul>
+            <ul class="tags" aria-label="Tech stack">
+              <li>Vue 3</li><li>Vue Router</li><li>PrimeVue</li><li>Bootstrap 5</li><li>Firebase</li><li>Cloud Functions</li><li>Firestore</li><li>Express</li><li>Mapbox</li><li>Chart.js</li>
+            </ul>
+            <div class="links">
+              <a href="https://commongoal-4a77b.web.app">Visit the live app
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+              <a href="https://github.com/joshuaanrico/CommonGoal">View the code on GitHub
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
       </div>
 
       <div class="also reveal">
@@ -571,7 +620,7 @@
       <div class="reveal">
         <h2>Skills</h2>
         <dl class="skills">
-          <div><dt>Frontend</dt><dd><ul class="tags"><li>React</li><li>Next.js</li><li>TypeScript</li><li>JavaScript</li><li>Vue</li><li>Vite</li><li>Tailwind CSS</li><li>Zustand</li><li>React Query</li><li>React Router</li><li>PWAs</li><li>MapLibre GL</li></ul></dd></div>
+          <div><dt>Frontend</dt><dd><ul class="tags"><li>React</li><li>Next.js</li><li>TypeScript</li><li>JavaScript</li><li>Vue 3</li><li>Vite</li><li>Tailwind CSS</li><li>Zustand</li><li>React Query</li><li>React Router</li><li>PWAs</li><li>MapLibre GL</li></ul></dd></div>
           <div><dt>Backend</dt><dd><ul class="tags"><li>Node.js</li><li>Express</li><li>REST APIs</li><li>Prisma</li><li>Zod</li></ul></dd></div>
           <div><dt>Databases</dt><dd><ul class="tags"><li>PostgreSQL</li><li>PostGIS (spatial data)</li><li>pgRouting</li><li>SQLite</li><li>MySQL</li><li>MongoDB</li><li>IndexedDB</li></ul></dd></div>
           <div><dt>Mobile</dt><dd><ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Room</li><li>Firebase</li></ul></dd></div>
