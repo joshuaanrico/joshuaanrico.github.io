@@ -158,7 +158,7 @@
                 <text class="ill-text" x="408" y="120" style="font-size:11px">Week 4, two tasks</text>
               </g>
             </svg>
-            <figcaption>Illustration, not client data. The conflict engine flags resources booked twice.</figcaption>
+            <figcaption>Illustration, not client data. It flags resources booked twice.</figcaption>
           </figure>
           <div class="reveal">
             <p class="kind"><b>01</b>Client work</p>
@@ -167,9 +167,8 @@
             <p class="context">At Ailevate, 2026. In production.</p>
             <p class="role">I built the frontend and the backend.</p>
             <ul class="points">
-              <li>Scheduling-conflict and problems engines that catch double-booked resources and overdue tasks across projects, covered by Vitest suites.</li>
-              <li>Strict TypeScript end to end, with Zod validating every API request.</li>
-              <li>Session authentication with role-based permissions, packaged with Docker.</li>
+              <li>Checks that catch double-booked resources and overdue tasks, with automated tests.</li>
+              <li>Login with user roles, and Docker setup.</li>
             </ul>
             <ul class="tags" aria-label="Tech stack">
               <li>React</li><li>TypeScript</li><li>Express</li><li>Prisma</li><li>SQLite</li><li>Zod</li><li>Vitest</li><li>Docker</li>
@@ -250,9 +249,8 @@
             <p class="context">Monash University industry project, team of 5, 2026. Live.</p>
             <p class="role">I wrote the app, the API and the AWS deployment. Teammates covered data science, AI and cyber security.</p>
             <ul class="points">
-              <li>Users download a versioned area pack once. After that, maps, road details and the fire estimate run fully offline.</li>
-              <li>Resumable downloads using HTTP range requests, with a SHA-256 check on every file before the pack is marked ready.</li>
-              <li>MapLibre GL with PMTiles and IndexedDB on the client; PostgreSQL with PostGIS and pgRouting behind the API.</li>
+              <li>Download your area once, then maps, roads and the fire estimate work with no signal.</li>
+              <li>If the download drops, it picks up where it stopped, and every file is checked before use.</li>
             </ul>
             <ul class="tags" aria-label="Tech stack">
               <li>React</li><li>TypeScript</li><li>Vite</li><li>Workbox PWA</li><li>MapLibre GL</li><li>IndexedDB</li><li>ONNX Runtime Web</li><li>Node.js</li><li>PostGIS</li><li>AWS</li>
@@ -422,9 +420,9 @@
             <p class="context">Monash University project, team of 4, 2026.</p>
             <p class="role">Lead contributor, with 73 of the team's 155 commits.</p>
             <ul class="points">
-              <li>Built the app's screens in Jetpack Compose and most of the live session screen.</li>
-              <li>Built the Room database for sessions and reminders, scheduled reminder notifications, and session history and progress.</li>
-              <li>Connected the team's CameraX and MediaPipe pose detection, plus Firebase sign-in with Google.</li>
+              <li>Built the app's screens, including most of the live session screen.</li>
+              <li>Session history, progress tracking and reminders, saved on the phone.</li>
+              <li>Hooked up the team's camera pose detection and Google sign-in.</li>
             </ul>
             <ul class="tags" aria-label="Tech stack">
               <li>Kotlin</li><li>Jetpack Compose</li><li>Room</li><li>Firebase Auth</li><li>CameraX</li><li>MediaPipe</li>
@@ -463,10 +461,10 @@
             <p class="context">Monash University, solo project, 2026. Live.</p>
             <p class="role">I built all of it, front to back (58 commits, solo).</p>
             <ul class="points">
-              <li>Firebase Auth with email and Google sign-in; member and admin roles enforced by Firestore rules, not just the router.</li>
-              <li>Cloud Functions that verify the caller's token: rating aggregates, role changes, email with attachments and admin bulk email through Brevo, with rate limits and the API key kept in Secret Manager.</li>
-              <li>Mapbox map with place search and directions, Chart.js admin charts, sortable tables with CSV and PDF export, and a public read-only REST API.</li>
-              <li>WCAG 2.1 AA work across the app: Lighthouse accessibility 100 on every page tested.</li>
+              <li>Email and Google sign-in, with member and admin roles checked on the server, not just in the browser.</li>
+              <li>Map with place search and directions, admin charts, and tables you can export to CSV or PDF.</li>
+              <li>Cloud Functions for ratings, role changes and email, plus a small public API.</li>
+              <li>Accessibility: Lighthouse score of 100 on every page tested.</li>
             </ul>
             <ul class="tags" aria-label="Tech stack">
               <li>Vue 3</li><li>Vue Router</li><li>PrimeVue</li><li>Bootstrap 5</li><li>Firebase</li><li>Cloud Functions</li><li>Firestore</li><li>Express</li><li>Mapbox</li><li>Chart.js</li>
@@ -490,24 +488,24 @@
           <div class="card">
             <h4>Sporty Potato venue dashboard</h4>
             <p class="context">At Ailevate, 2026</p>
-            <p>Sole developer of the web dashboard where sports venues manage courts, classes, bookings, promotions and analytics. Next.js, TypeScript and Tailwind CSS, connected to the booking API.</p>
+            <p>Built the web dashboard on my own. Sports venues use it to manage courts, classes and bookings. Next.js, TypeScript and Tailwind CSS.</p>
             <p class="private">Private client project</p>
           </div>
           <div class="card">
             <h4>UAT for an AI email routing agent</h4>
             <p class="context">At Ailevate, 2026</p>
-            <p>Ran user acceptance testing for a client's AI agent that routes incoming email. Wrote a 34-case test plan and the formal sign-off.</p>
+            <p>Tested a client's AI agent that sorts incoming email. Wrote a 34-case test plan and the sign-off.</p>
             <p class="private">Private client project</p>
           </div>
           <div class="card">
             <h4>Test automation at Blitz Electric Mobility</h4>
             <p class="context">Quality Assurance, Jakarta, 2023 to 2025</p>
-            <p>Wrote and maintained test plans for web apps and REST APIs, automated regression suites with Selenium (Python) and Postman, and ran UAT and bug triage in Jira with an international Agile team.</p>
+            <p>Wrote test plans, automated regression tests with Selenium and Postman, and ran UAT and bug triage in Jira.</p>
           </div>
           <div class="card">
             <h4>End-to-end tests on my own builds</h4>
             <p class="context">FlowIQ, Lalita and Emberhawk, 2026</p>
-            <p>Playwright tests for the flows users click through, and Vitest suites for logic like FlowIQ's scheduling-conflict engine. I test what I build before anyone else has to.</p>
+            <p>Playwright for what users click through, Vitest for the logic. I test what I build before anyone else has to.</p>
           </div>
         </div>
       </div>
